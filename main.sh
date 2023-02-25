@@ -12,5 +12,11 @@ cd ./hwdata
 # Get build deps
 apt-get build-dep ./ -y
 
-# Build binaries
-echo -ne 'y'  | debuild -us -uc
+# Build package
+dh_make --createorig
+dpkg-buildpackage
+
+# Move the debs to output
+cd ../
+mkdir -p ./output
+mv ./*.deb ./output/

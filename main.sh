@@ -4,7 +4,7 @@ add-apt-repository https://ppa.pika-os.com
 add-apt-repository ppa:pikaos/pika
 add-apt-repository ppa:kubuntu-ppa/backports
 # Clone Upstream
-git  clone https://github.com/vcrhonek/hwdata
+git clone https://github.com/vcrhonek/hwdata -b v0.369
 sed -i 's#/usr/bin/env\ python#/usr/bin/env\ python3#' ./*
 cp -rvf ./debian ./hwdata/
 cd ./hwdata

@@ -1,3 +1,9 @@
+hwdata (0.369-99pika1) lunar; urgency=medium
+
+  * New upstream release && update to lunar.
+  
+ -- Ward Nakchbandi <hotrod.master@hotmail.com>  Sat, 15 Oct 2022 18:58:00 +0300
+
 hwdata (0.367-99pika1) kinetic; urgency=medium
 
   * New upstream release.

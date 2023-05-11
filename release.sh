@@ -4,9 +4,6 @@ dpkg-sig --sign builder ./output/hwdata*.deb
 # Pull down existing ppa repo db files etc
 rsync -azP --exclude '*.deb' ferreo@direct.pika-os.com:/srv/www/pikappa/ ./output/repo
 
-# Remove our existing package from the repo
-reprepro -V --basedir ./output/repo/ removefilter lunar 'Package (% hwdata*)'
-
 # Add the new package to the repo
 reprepro -V --basedir ./output/repo/ includedeb lunar ./output/hwdata*.deb
 

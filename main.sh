@@ -1,5 +1,5 @@
 # Clone Upstream
-git clone https://github.com/vcrhonek/hwdata -b v0.370
+git clone https://github.com/vcrhonek/hwdata -b v0.374
 sed -i 's#/usr/bin/env\ python#/usr/bin/env\ python3#' ./*
 cp -rvf ./debian ./hwdata/
 cd ./hwdata
@@ -8,8 +8,7 @@ cd ./hwdata
 apt-get build-dep ./ -y
 
 # Build package
-dh_make --createorig
-dpkg-buildpackage
+dpkg-buildpackage --no-sign
 
 # Move the debs to output
 cd ../

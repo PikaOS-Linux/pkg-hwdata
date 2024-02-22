@@ -1,5 +1,5 @@
 # Clone Upstream
-git clone https://github.com/vcrhonek/hwdata -b v0.374
+git clone https://github.com/vcrhonek/hwdata -b v0.379
 sed -i 's#/usr/bin/env\ python#/usr/bin/env\ python3#' ./*
 cp -rvf ./debian ./hwdata/
 cd ./hwdata

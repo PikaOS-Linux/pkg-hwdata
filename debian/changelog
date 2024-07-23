@@ -1,3 +1,9 @@
+hwdata (0.384-101pika1) pika; urgency=medium
+
+  * New upstream release && update to PikaOS 4.
+  
+ -- Ward Nakchbandi <hotrod.master@hotmail.com>  Sat, 15 Oct 2022 18:58:00 +0300
+
 hwdata (0.379-100pika1) pikauwu; urgency=medium
 
   * New upstream release && update to pikauwuw.

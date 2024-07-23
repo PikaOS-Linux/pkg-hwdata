@@ -15,7 +15,7 @@ export DPKG_GENSYMBOLS_CHECK_LEVEL=0
 
 # Clone Upstream
 git clone https://github.com/vcrhonek/hwdata -b v"$VERSION"
-sed -i 's#/usr/bin/env\ python#/usr/bin/env\ python3#' ./*
+find . -type f ! -path '*' -exec sed -i 's#/usr/bin/env\ python#/usr/bin/env\ python3#' {} \;
 cp -rvf ./debian ./hwdata/
 cd ./hwdata
 

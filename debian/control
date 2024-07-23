@@ -12,8 +12,7 @@ Vcs-Git: https://salsa.debian.org/pino/hwdata.git
 Package: hwdata
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends}, pci.ids
-Provides: usb.ids
+Depends: ${misc:Depends}, pci.ids, usb.ids
 Description: hardware identification / configuration data
  This package contains various hardware identification and configuration data,
  such as the pci.ids database, or the XFree86/xorg Cards database.
@@ -22,7 +21,7 @@ Description: hardware identification / configuration data
 Package: hwdata-dev
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends}, hwdata
+Depends: ${misc:Depends}, hwdata (= ${binary:Version})
 Description: hardware identification / configuration data
  This package contains various hardware identification and configuration data,
  such as the pci.ids database, or the XFree86/xorg Cards database.
